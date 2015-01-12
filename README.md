@@ -1,7 +1,7 @@
 The employee's #427 workplace.
 ----------------------------
 
-This is fun project for the game "The Stanley Parable".
+This is fun project for the game *The Stanley Parable*.
 
 The back story:
 
