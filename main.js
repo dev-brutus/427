@@ -19,15 +19,15 @@ function print(text, nextAction) {
 }
 
 function generateTask() {
-    var randomChar = String.fromCharCode(Math.floor(Math.random() * 27) + 65);
+    var randomChar = String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 
     window.setTimeout(function () {
         var message = "\nPlease, press key '" + randomChar + "'\n"
         print(message, function () {
             document.onkeydown = function (e) {
-                e = e || event;
-                var ch = String.fromCharCode(e.keyCode);
-                if (ch >= 'A' && ch <= 'Z') {
+                var keyCode = (e || event).keyCode;
+                var ch = String.fromCharCode(keyCode);
+                if (keyCode >= 0 && keyCode <= 127) {
                     if (!LOCK) {
                         if (ch == randomChar) {
                             document.onkeydown = undefined;
