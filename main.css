@@ -1,5 +1,9 @@
 #display {
     width: 100%;
+    height: 90%;
     color: green;
     background-color: black;
+}
+#header {
+    font-size: 150%;
 }
